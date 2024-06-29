@@ -1,0 +1,203 @@
+schema:movie
+
+attributes:title,year,director,runtime,language,genre,producer
+
+
+1)api for listing all movies
+
+url:localhost:8000/api/movies/
+
+    method:GET
+
+    body:nill
+
+    status:pending
+
+2)api for creating a movies
+
+  url:localhost:8000/api/movies/
+
+
+     method:POST
+
+     body:{
+     "title":"movie_title",
+     "year":"movie year",
+     "director":"movie_director,
+     "runtime":"movie runtime",
+     "language","movie language",
+     "genre":"movie_genre
+     }
+
+     status:pending
+
+3)api for fetching a specific movie
+  
+  url:localhost:8000/api/movies/{id}/
+
+  method:GET
+
+  body:nill
+
+  status:pending
+
+4)api for updating a specific movie
+
+url:localhost:8000/api/movies/{id}
+
+
+     method:PUT
+
+     body:{
+     "title":"movie_title",
+     "year":"movie year",
+     "director":"movie_director,
+     "runtime":"movie runtime",
+     "language","movie language",
+     "genre":"movie_genre
+     }
+
+     status:pending
+
+5)api for deleteing a specific movie
+
+url:localhost:8000/api/movies/{id}/
+
+  method:DELETE
+
+  body:nill
+
+  status:pending
+
+
+6)api for listing all languages
+
+url:localhost:8000/api/movies/languages/
+
+ method:get
+
+ body:nill
+
+
+
+schema:actor
+
+attributes:name,age,picture,gender
+
+
+
+7)api for listing actors
+
+
+  url:localhost:8000/api/actors/
+
+  method:get
+
+  body:nill
+
+
+8)api for creating actors
+
+  url :localhost:8000/api/actors/
+
+  method:POST
+  body:{
+    "name":"actor name"
+    "age :age"
+    "picture":"picture"
+    "gender":"gender"
+     }
+
+
+     api for retreving a actor detail
+
+
+       
+  url:localhost:8000/api/actors/{id}
+
+  method:get
+
+  body:nill
+
+
+
+  api for updating
+
+  
+  url:localhost:8000/api/actors/{id}
+
+  method:put
+
+  body:{
+    "name":"actor name"
+    "age :age"
+    "picture":"picture"
+    "gender":"gender"
+     }
+
+ 
+
+
+
+  api for deleteing a actor
+
+  url:localhost:8000/api/actors/{id}
+
+  method:deleteing
+
+  body:nill
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+#creating serializer
+
+your app>serializers.py
+
+api>serializers.py
+
+rest_framework>serializers.py >
+                          1)class serializer
+                          2)class ModelSerialzer
+
+
+
+1)api call for adding a new track
+
+  url:localhost:8000/api/albums/{id}/add_tracks/
+
+  method=POST
+
+  body:{
+    "title":
+    "duration":
+    "track_number":
+    "singers":
+    "genre"
+  }
+
+
+  api for adding rerview
+
+schema:review
+
+attributes:{comment,rating,user,created_date}
+
+  url:localhost:8000/api/albums/{id}/add_review/
+
+  method:post
+
+  body:{comment,rating,user}
